@@ -25,6 +25,9 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
         libxml2-dev \
         libxt-dev \
         libfontconfig1-dev \
+        libharfbuzz-dev \
+        libfribidi-dev \
+        cmake \
     && apt-get autoremove -y && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts \
     && python3 -m pip --no-cache-dir install radian \
     && pip --disable-pip-version-check --no-cache-dir install pybryt \
